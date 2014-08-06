@@ -3,9 +3,9 @@
 ## Overview
 
 An seed project for client side applications with the following components:
-- ![AngularJS](https://angularjs.org/)
-- ![Google Web Starter Kit](https://developers.google.com/web/starter-kit/)
-- ![Webpack](http://webpack.github.io/)
+- [AngularJS](https://angularjs.org/)
+- [Google Web Starter Kit](https://developers.google.com/web/starter-kit/)
+- [Webpack](http://webpack.github.io/)
 
 ## Installation
 
