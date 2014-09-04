@@ -47,12 +47,13 @@
 	/*global angular */
 	'use strict';
 
-	__webpack_require__(5);
 	__webpack_require__(6);
+	__webpack_require__(7);
 	__webpack_require__(1);
 	__webpack_require__(2);
 	__webpack_require__(3);
 	__webpack_require__(4);
+	__webpack_require__(5);
 
 	// Declare app level module which depends on filters, and services
 	angular.module('myApp', [
@@ -76,7 +77,7 @@
 	/*global angular */
 	'use strict';
 
-	__webpack_require__(5);
+	__webpack_require__(6);
 
 	/* Filters */
 
@@ -95,7 +96,7 @@
 	/*global angular */
 	'use strict';
 
-	__webpack_require__(5);
+	__webpack_require__(6);
 
 	/* Services */
 
@@ -113,7 +114,7 @@
 	/*global angular */
 	'use strict';
 
-	__webpack_require__(5);
+	__webpack_require__(6);
 
 	/* Directives */
 
@@ -133,7 +134,7 @@
 	/*global angular */
 	'use strict';
 
-	__webpack_require__(5);
+	__webpack_require__(6);
 
 	/* Controllers */
 
@@ -148,6 +149,62 @@
 
 /***/ },
 /* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*!
+	 *
+	 *  Web Starter Kit
+	 *  Copyright 2014 Google Inc. All rights reserved.
+	 *
+	 *  Licensed under the Apache License, Version 2.0 (the "License");
+	 *  you may not use this file except in compliance with the License.
+	 *  You may obtain a copy of the License at
+	 *
+	 *    http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 *  Unless required by applicable law or agreed to in writing, software
+	 *  distributed under the License is distributed on an "AS IS" BASIS,
+	 *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	 *  See the License for the specific language governing permissions and
+	 *  limitations under the License
+	 *
+	 */
+	(function () {
+	  'use strict';
+
+	  var querySelector = document.querySelector.bind(document);
+
+	  var navdrawerContainer = querySelector('.navdrawer-container');
+	  var body = document.body;
+	  var appbarElement = querySelector('.app-bar');
+	  var menuBtn = querySelector('.menu');
+	  var main = querySelector('main');
+
+	  function closeMenu() {
+	    body.classList.remove('open');
+	    appbarElement.classList.remove('open');
+	    navdrawerContainer.classList.remove('open');
+	  }
+
+	  function toggleMenu() {
+	    body.classList.toggle('open');
+	    appbarElement.classList.toggle('open');
+	    navdrawerContainer.classList.toggle('open');
+	    navdrawerContainer.classList.add('opened');
+	  }
+
+	  main.addEventListener('click', closeMenu);
+	  menuBtn.addEventListener('click', toggleMenu);
+	  navdrawerContainer.addEventListener('click', function (event) {
+	    if (event.target.nodeName === 'A' || event.target.nodeName === 'LI') {
+	      closeMenu();
+	    }
+	  });
+	})();
+
+
+/***/ },
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var require;/**
@@ -22035,7 +22092,7 @@
 	!window.angular.$$csp() && window.angular.element(document).find('head').prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style>');
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**

@@ -7,6 +7,7 @@ require('./filters.js');
 require('./services.js');
 require('./directives.js');
 require('./controllers.js');
+require('./web-starter-kit.js');
 
 // Declare app level module which depends on filters, and services
 angular.module('myApp', [
